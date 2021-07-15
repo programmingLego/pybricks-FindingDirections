@@ -2,7 +2,11 @@
 Main program for robot.
 
 """
-from pybricks.tools import StopWatch
-from micropython import
-s: StopWatch = StopWatch()
-s.reset()
+from pybricks import hubs
+from pybricks.geometry import Axis
+
+
+class Robot(hubs.PrimeHub):
+
+    def __init__(self, name: str, front_side: Axis = Axis.X, top_side: Axis = Axis.Z):
+        super.
